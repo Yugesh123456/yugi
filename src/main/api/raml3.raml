@@ -1,0 +1,35 @@
+#%RAML 1.0
+title: raml3
+baseUri: http://localhost:8081/yugi
+protocols: [ HTTP ]
+mediaType: [ application/json ]
+version: 1.0
+/Nani:
+  get:
+    queryParameters:
+      empid: integer
+      empname:  string
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              {
+                "employess details inserted"
+              }  
+  post:
+    body:
+      application/json:
+        examples:
+          {
+            "empid":123,
+            "empname":"nani"
+          }            
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              {
+                "employess details"
+              }      
