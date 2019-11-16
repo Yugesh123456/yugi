@@ -16,6 +16,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     </flow>
     <flow name="get:/Nani:raml3-config">
         <set-payload value="null" doc:name="Set Payload"/>
+        <logger message="payload" level="INFO" doc:name="Logger"/>
     </flow>
     <flow name="post:/Nani:raml3-config">
         <set-payload value="null" doc:name="Set Payload"/>
